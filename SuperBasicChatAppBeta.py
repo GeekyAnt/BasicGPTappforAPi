@@ -48,7 +48,7 @@ def save_to_database(response):
     conn = None
     try:
         # Connect to the PostgreSQL database
-        conn = psycopg2.connect(host="192.168.1.130", port=5432, dbname="Chat01", user="agunn", password="443808Cell!")
+        conn = psycopg2.connect(host="192.168.1.130", port=5432, dbname="Chat01", user="USER", password="password")
         
         # Create a cursor object
         cur = conn.cursor()
